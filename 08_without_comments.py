@@ -2,7 +2,7 @@
 import mcpi.minecraft
 import RPi.GPIO
 
-mc = mcpi.minecraft.Minecraft.create()
+minecraft = mcpi.minecraft.Minecraft.create()
 
 red = 18
 yellow = 23
@@ -24,7 +24,7 @@ for light in lights:
 
 try:
     while True:
-        position = mc.player.getTilePos()
+        position = minecraft.player.getTilePos()
 
         for light in lights:
             ledOff(light)
